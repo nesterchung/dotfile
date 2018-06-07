@@ -1,0 +1,3 @@
+function apkv() {
+  aapt dump badging $1 | grep version
+}
