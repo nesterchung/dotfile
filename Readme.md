@@ -1,55 +1,57 @@
 # the better terminal experience
-Recommand to use iTerm2, zsh m rezto, neovim
-建議使用 iTerm2, zsh m rezto, neovim
+Recommend to use iTerm2, zsh zepreto, neovim
 
 Guide - [http://mikebuss.com/2014/02/02/a-beautiful-productive-terminal-experience/]
 
 zsh plugins - [https://github.com/unixorn/awesome-zsh-plugins]
 
-## Better promopt with git simple
+## Better prompt with git simple
 (branch) >
 
-## better android developer envirmoent
+## better android developer environment
 
 ## better file search to save you life
-Recommand to use fzf fd ripgrep nnn vidir
-
-## tools need to install first
-brew install ripgrep
-brew install fd
+fzf fd ripgrep nnn vidir
 
 ## better vim
-use nvim instead vim, no why
+use nvim instead vim
+
+
+get start vim https://github.com/mhinz/vim-galore
 
 ## better ai??
 install [https://github.com/gleitz/howdoi]
 
-## orgainze your vim
-just source base.sh !
+## nvim configure
 
-brew install neovim 
-pip2 install --user --upgrade neovim
-pip3 install --user --upgrade neovim
-gem install neovim
-
-* [ ] create config
-
+```
 mkdir -p ~/.config/nvim
-nvim ~/.config/nvim/init.vim
+cat > ~/.config/nvim/init.vim << EOF
+set runtimepath+=~/.vim,~/.vim/after
+set packpath+=~/.vim
+source ~/.vimrc
+EOF
+```
 
-Add following 
+Basic Vim, provide minimus
 
-  ```
-    set runtimepath+=~/.vim,~/.vim/after
-    set packpath+=~/.vim
-    
-    source ~/.vimrc
-  ```
+Navigation
+git support
+golang support
+autocomplate
+spell check
+mouse on
+easy copy paste
+fuzzy search
+snippet
+comment
+
+Other vim plugs should move to vim.after and be
 
 
 # vim command
 
-sifht-K - find man page
+shift-K - find man page
 n  <C-\>       * :call OpenNerdTree()<CR>
 n  <C-S>       * :RelatedSpecVOpen<CR> --?
 n  ,sl         * :RunItermSpringSpecLine<CR>
@@ -58,8 +60,11 @@ n  ,rl         * :RunItermSpecLine<CR>
 n  ,rs         * :RunItermSpec<CR>
 
 
+`]s` next spell error 
+`zg` add word to good word
+
 # test zsh loading time
 `time zsh -i -c exit`
 
-# zsh queick refference
-zsh conditional-expressions [http://zsh.sourceforge.net/Doc/Release/Conditional-Expressions.html]
+# Zsh quick reference
+Zsh conditional-expressions [http://zsh.sourceforge.net/Doc/Release/Conditional-Expressions.html]

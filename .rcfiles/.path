@@ -1,11 +1,17 @@
+#!/usre/bin/env zsh
+path_add() {
+  test -r $1 && export PATH=$PATH:$1 || echo "$1 not found"
+}
+
 # Customize Paths
-export PATH=$PATH:$ANT_HOME/bin
-export PATH=$PATH:$MAVEN_HOME/bin
-export PATH=$PATH:$GRADLE_HOME/bin
-export PATH=$PATH:$GOROOT/bin
-export GOPATH=$HOME/go
+path_add $ANT_HOME/bin
+path_add $GRADLE_HOME/bin
+path_add $GOROOT/bin
+
+#python
+path_add $HOME/anaconda2/bin
 
 # ignore because prezeto
-#export PATH=$PATH:$HOME/.rbenv/bin
+# path_add $HOME/.rbenv/bin
 
-
+# vim: ts=2 sw=2<Paste>

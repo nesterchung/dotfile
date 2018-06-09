@@ -7,12 +7,16 @@ export GIT_EDITOR="nvim"
 
 export VAGRANT_DEFAULT_PROVIDER=virtualbox
 
-export GOROOT=`brew --prefix go@1.9`/libexec
 export ANT_HOME=/usr/local/opt/ant
-export MAVEN_HOME=/usr/local/opt/maven
-export GRADLE_HOME=/usr/local/opt/gradle
+#todo move to siterwellrc
+#export GRADLE_HOME=`brew --prefix gradle`
 
-# cpp configures
+# todo mvoe to .go
+export GOPATH=$HOME/go
+export GOROOT=`brew --prefix go`/libexec
+
+# todo move to .cpp
+# cpp configures 
 # export CC=/usr/local/bin/x86_64-apple-darwin15.6.0-gcc-4.7.4
 # export CXX=/usr/local/bin/x86_64-apple-darwin15.6.0-g++-4.7
 export CC=/usr/bin/clang
@@ -21,3 +25,4 @@ export GTEST_DIR=/Users/nester/dev/googletest/googletest
 export GMOCK_DIR=/Users/nester/dev/googletest/googlemock
 
 export LESS_TERMCAP_so=$'\E[30;43m'
+# vim: ts=2 sw=2

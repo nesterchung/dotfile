@@ -1,4 +1,5 @@
 #!/usr/bin/env zsh
+bindkey -v
 
 # exports
 export DOTFILES=$HOME/dotfile

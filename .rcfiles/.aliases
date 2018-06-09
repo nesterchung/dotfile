@@ -1,5 +1,6 @@
+#!/usr/bin/env zsh
 
-function vi-note(){
+vi-note(){
   topic=$1
   $EDITOR $NOTE_FILES/${topic}.md
 }
@@ -12,10 +13,7 @@ done
 # utils for search google 
 alias ggg='googler -n 7 -c ru -l ru'
 
-alias m='mvim 'a
+alias vim="nvim"
+alias m='mvim '
 alias o="open "
 alias ptt="ssh bbsu@ptt.cc"
-
-# Fast ui alias
-source ~/fastai/courses/setup/aws-alias.sh
-source $HOME/anaconda2/bin/aws_zsh_completer.sh

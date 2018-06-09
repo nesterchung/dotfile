@@ -1,11 +1,10 @@
+#!/usr/bin/env zsh
 load_if_exist()
 {
-    if [ -f ${1} ]; then
-        source ${1}
-    fi
+    test -r $1 && source $1
 }
 
-for file in $RCFILES/.{nvmrc,fzf}; do
+for file in $RCFILES/.{nvmrc,ruby,fzf,aws,fasd}; do
   load_if_exist $file
 done
 unset file
