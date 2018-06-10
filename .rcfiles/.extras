@@ -1,7 +1,4 @@
-# ignore because zepreto
-#  eval "$(rbenv init -)"
-
-#eval $(thefuck --alias)   no need anymore
+#eval $(thefuck --alias) 
 source $RCFILES/.nvmrc
 
 # The next line updates PATH for the Google Cloud SDK.

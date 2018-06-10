@@ -1,12 +1,15 @@
 " deoplete options
-let g:deoplete#enable_at_startup = 1
+let g:deoplete#enable_at_startup = 0
 let g:deoplete#enable_smart_case = 1
 
 "disable autocomplete by default
-let b:deoplete_disable_auto_complete=1
-let g:deoplete_disable_auto_complete=1
+let b:deoplete_disable_auto_complete = 1
+let g:deoplete_disable_auto_complete = 1
 call deoplete#custom#buffer_option('auto_complete', v:false)
 
+if !exists('g:deoplete#omni#input_patterns')
+    let g:deoplete#omni#input_patterns = {}
+endif
 
 " Disable the candidates in Comment/String syntaxes.
 call deoplete#custom#source('_',
@@ -14,14 +17,12 @@ call deoplete#custom#source('_',
 
 autocmd InsertLeave,CompleteDone * if pumvisible() == 0 | pclose | endif
 
+"autocmd FileType markdown let b:deoplete_disable_auto_complete=1
+"autocmd FileType vimwiki let b:deoplete_disable_auto_complete=1
 
 " set sources
 let g:deoplete#sources = {}
-let g:deoplete#sources.python = ['LanguageClient']
-let g:deoplete#sources.python3 = ['LanguageClient']
 let g:deoplete#sources.vim = ['vim']
-let g:deoplete#sources.cpp = ['LanguageClient']
-let g:deoplete#sources.c = ['LanguageClient']
+let g:deoplete#ignore_sources = {}
 
-" use https://github.com/autozimu/LanguageClient-neovim
-" should souce lc.vim
+call deoplete#custom#source('ultisnips', 'matchers', ['matcher_fuzzy'])

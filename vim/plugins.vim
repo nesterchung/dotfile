@@ -2,19 +2,24 @@
 set rtp+=~/.vim/bundle/Vundle.vim
 call vundle#begin()
 
-
+Plugin 'VundleVim/Vundle.vim'
 Plugin 'tpope/vim-fugitive'     " git support
 Plugin 'scrooloose/nerdtree'    " file system explorer
 Plugin 'tpope/vim-surround'     " surroundings - parentheses, brackets, quotes, XML tags, and more.
 Plugin 'junegunn/fzf.vim'       " fzf love vim       
-Plugin 'scrooloose/syntastic'   " Syntax checking hacks for vim
-Plugin 'sirver/ultisnips'       " UltiSnips - The ultimate snippet solution for Vim. Send pull requests to SirVer/ultisnips!
-Plugin 'honza/vim-snippets'     " Snippets are separated from the engine.
 Plugin 'majutsushi/tagbar'      " Vim plugin that displays tags in a window, ordered by scope
 Plugin 'scrooloose/nerdcommenter' " commenting
 
 
-Plugin 'autozimu/LanguageClient-neovim'
+" Semantic language support
+" Plugin 'zchee/deoplete-jedi'
+
+" Plugins that connect Vim with language servers, we have two choice 
+
+"Plugin 'autozimu/LanguageClient-neovim'  "After bundle install, shoud run install.sh"
+" Or
+" Plugin 'prabirshrestha/async.vim'
+" Plugin 'prabirshrestha/vim-lsp'
 
 if has('nvim')
   Plugin 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' }
@@ -24,8 +29,9 @@ else
   Plugin 'roxma/vim-hug-neovim-rpc'
 endif
 
+Plugin 'morhetz/gruvbox'
+Plugin 'ervandew/supertab'
 Plugin 'vimwiki/vimwiki'
-
 
 call vundle#end()            " required
 filetype plugin indent on    " required
@@ -37,7 +43,6 @@ filetype plugin indent on    " required
 " :PluginClean      - confirms removal of unused plugins; append `!` to auto-approve removal
 "
 " see :h vundle for more details or wiki for FAQ
-
 
 " ==== NERD tree
 " Open the project tree and expose current file in the nerdtree with Ctrl-\
@@ -55,35 +60,21 @@ nnoremap <silent> <C-\> :call OpenNerdTree()<CR>
 let NERDTreeDirArrows = 1
 let g:NERDTreeWinSize = 30
 
-
-
 " If installed using Homebrew
 set rtp+=/usr/local/opt/fzf
 " If installed using git
 "set rtp+=~/.fzf
 cnoreabbrev fzf Files
 
-
-
-" Trigger configuration. Do not use <tab> if you use https://github.com/Valloric/YouCompleteMe.
-let g:UltiSnipsExpandTrigger="<tab>"
-let g:UltiSnipsJumpForwardTrigger="<c-b>"
-let g:UltiSnipsJumpBackwardTrigger="<c-z>"
-
 " If you want :UltiSnipsEdit to split your window.
 let g:UltiSnipsEditSplit="vertical"
 
-
 nmap <F12> :TagbarToggle<CR>
-
 
 " https://vimawesome.com/plugin/the-nerd-commenter
 " Add spaces after comment delimiters by default
 let g:NERDSpaceDelims = 1
 
-
 " configuration vimwiki
 " https://www.dailydrip.com/blog/vimwiki.html
 let g:vimwiki_list = [{'path': '~/vimwiki/', 'syntax': 'markdown', 'ext': '.wiki'}]
-
-

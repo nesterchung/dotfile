@@ -19,3 +19,7 @@ for file in $RCFILES/.{exports,path,aliases,functions,prompt,extras,androidenv,c
 done
 unset file
 
+
+# color
+source "$HOME/.vim/bundle/gruvbox/gruvbox_256palette_osx.sh"
+
