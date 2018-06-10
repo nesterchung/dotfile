@@ -5,6 +5,8 @@ so $DOTFILES/vim/key-binding.vim
 
 so $DOTFILES/vim/color.vim
 
+set list
+set listchars=tab:▸\ ,eol:¬
 set ignorecase  " make auto complete ignorecase
 set smartcase
 " make search case-senstive 
@@ -20,7 +22,6 @@ autocmd FileType gitcommit setlocal spell
 set spellfile=$HOME/.config/nvim/spell/en.utf-8.add
 set complete+=kspell
 
-
 " config vimwiki
 au BufRead,BufNewFile *.wiki set filetype=vimwiki
 ":autocmd FileType vimwiki nmap <leader>d :VimwikiMakeDiaryNote
@@ -33,9 +34,8 @@ autocmd FileType go nmap <Leader>i <Plug>(go-info)
 let g:go_fmt_autosave = 0
 let g:go_fmt_command = "goimports"
 
-
+" set true color
 let $NVIM_TUI_ENABLE_TRUE_COLOR=1
-
 
 " If installed using Homebrew
 set rtp+=/usr/local/opt/fzf
