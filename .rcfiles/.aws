@@ -1,3 +1,0 @@
-# Fast ui alias
-source ~/fastai/courses/setup/aws-alias.sh
-source $HOME/anaconda2/bin/aws_zsh_completer.sh

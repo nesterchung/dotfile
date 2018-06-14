@@ -1,3 +1,4 @@
+#!/bin/sh
 # Android Settings
 ## Customize Exports
 export ANDROID_BUILD_TOOLS_VERSION="26.0.1"
@@ -14,3 +15,6 @@ export PATH=$PATH:$ANDROID_NDK_ROOT
 
 alias adb='adb-peco'
 alias dumpsys="adb shell dumpsys "
+function apkv() {
+  aapt dump badging $1 | grep version
+}

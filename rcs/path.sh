@@ -11,7 +11,4 @@ path_add $GOROOT/bin
 #python
 path_add $HOME/anaconda2/bin
 
-# ignore because prezeto
-# path_add $HOME/.rbenv/bin
-
 # vim: ts=2 sw=2

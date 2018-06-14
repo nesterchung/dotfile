@@ -1,17 +1,8 @@
-#!/usr/bin/env zsh
-load_if_exist()
-{
-    test -r $1 && source $1
-}
-
-for file in $RCFILES/.{nvmrc,ruby,fzf,aws,fasd}; do
-  load_if_exist $file
+#!/bin/sh
+for file in $RC_DIR/{nvmrc,go,ruby,fzf,aws,fasd}.sh; do
+  safe_source $file
 done
 unset file
-
-function apkv() {
-  aapt dump badging $1 | grep version
-}
 
 # copy from tj's apex
 uname_os() {

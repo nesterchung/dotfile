@@ -1,4 +1,5 @@
-# the better terminal experience
+# nester's dotfile
+
 Recommend to use iTerm2, zsh zepreto, neovim
 
 Guide - [http://mikebuss.com/2014/02/02/a-beautiful-productive-terminal-experience/]
@@ -68,3 +69,12 @@ n  ,rs         * :RunItermSpec<CR>
 
 # Zsh quick reference
 Zsh conditional-expressions [http://zsh.sourceforge.net/Doc/Release/Conditional-Expressions.html]
+
+
+## TODO
+
+* [ ] complete install script
+* [ ] install script support options, ask user to install tools
+* [ ] vim install script
+* [ ] more android studio script
+

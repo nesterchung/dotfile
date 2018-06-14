@@ -4,6 +4,8 @@ xcode-select --install
 #install brew
 /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
 
+gem install gist
+
 # brew install
 sh brew.sh
 

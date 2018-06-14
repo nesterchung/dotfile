@@ -9,12 +9,7 @@ export GIT_EDITOR="nvim"
 export VAGRANT_DEFAULT_PROVIDER=virtualbox
 
 export ANT_HOME=/usr/local/opt/ant
-#todo move to siterwellrc
-#export GRADLE_HOME=`brew --prefix gradle`
 
-# todo mvoe to .go
-export GOPATH=$HOME/go
-export GOROOT=`brew --prefix go`/libexec
 
 # todo move to .cpp
 # cpp configures 
