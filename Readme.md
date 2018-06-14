@@ -33,7 +33,7 @@ source ~/.vimrc
 EOF
 ```
 
-Basic Vim, provide minimus
+Basic Vim, provide minimums
 
 Navigation
 git support
