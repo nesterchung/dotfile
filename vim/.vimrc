@@ -9,8 +9,6 @@ set list
 set listchars=tab:▸\ ,eol:¬
 set ignorecase  " make auto complete ignorecase
 set smartcase
-" make search case-senstive 
-nnoremap / /\C
 
 " Always enable spell check, my grammar is horrible
 set spell
@@ -21,6 +19,10 @@ autocmd FileType markdown setlocal spell
 autocmd FileType gitcommit setlocal spell
 set spellfile=$HOME/.config/nvim/spell/en.utf-8.add
 set complete+=kspell
+nmap <silent> <leader>s :set spell!<CR>
+nmap <silent> <F2> ]s
+
+
 
 " config vimwiki
 au BufRead,BufNewFile *.wiki set filetype=vimwiki
