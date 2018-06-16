@@ -20,14 +20,7 @@ Plugin 'fatih/vim-go'           " Go development plugin for Vim
 Plugin 'morhetz/gruvbox'
 Plugin 'ervandew/supertab'
 Plugin 'vimwiki/vimwiki'
-
-" Semantic language support
-" Plugin 'zchee/deoplete-jedi'
-" Plugins that connect Vim with language servers, we have two choice 
-" Plugin 'autozimu/LanguageClient-neovim'  "After bundle install, shoud run install.sh"
-" Or
-" Plugin 'prabirshrestha/async.vim'
-" Plugin 'prabirshrestha/vim-lsp'
+Plugin 'w0rp/ale'
 
 if has('nvim')
     Plugin 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' }
