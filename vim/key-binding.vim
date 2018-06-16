@@ -38,5 +38,9 @@ nnoremap <silent> ss <C-w>s
 "Clear current search highlight by double tapping //
 nmap <silent> // :nohlsearch<CR>
 
+" tab switch
+nnoremap <C-Left> :tabprevious<CR>
+nnoremap <C-Right> :tabnext<CR>
+
 :command W w
 :command Q q

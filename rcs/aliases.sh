@@ -23,8 +23,8 @@ done
 alias ggg='googler -n 7 -c ru -l ru'
 
 alias vim="nvim"
-alias m='mvim '
-alias o="open "
+alias m='vimr'
+alias o="open"
 alias ptt="ssh bbsu@ptt.cc"
 
 unset filename
