@@ -135,7 +135,7 @@
 	name = nester
 	email = twntwn@gmail.com
 [commit]
-	template = /Users/nester/.stCommitMsg
+
 [filter "lfs"]
 	clean = git-lfs clean -- %f
 	smudge = git-lfs smudge -- %f
