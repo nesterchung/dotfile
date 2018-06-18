@@ -1,4 +1,5 @@
-# nester's dotfile
+nester's dotfile
+===
 
 Recommend to use iTerm2, zsh zepreto, neovim
 
@@ -6,24 +7,27 @@ Guide - [http://mikebuss.com/2014/02/02/a-beautiful-productive-terminal-experien
 
 zsh plugins - [https://github.com/unixorn/awesome-zsh-plugins]
 
-## Better prompt with git simple
-(branch) >
+prompt use pure
 
-## better android developer environment
 
-## better file search to save you life
+search/file utils
+---
 fzf fd ripgrep nnn vidir
 
-## better vim
+better vim
+---
 use nvim instead vim
-
 
 get start vim https://github.com/mhinz/vim-galore
 
-## better ai??
-install [https://github.com/gleitz/howdoi]
+help tools
+---
 
-## nvim configure
+howdoi [https://github.com/gleitz/howdoi]
+
+neovim
+---
+
 
 ```
 mkdir -p ~/.config/nvim
@@ -34,24 +38,20 @@ source ~/.vimrc
 EOF
 ```
 
-Basic Vim, provide minimums
+simple plugin list
 
-Navigation
-git support
-golang support
-autocomplate
-spell check
-mouse on
-easy copy paste
-fuzzy search
-snippet
-comment
+* [X] Navigation
+* [X] git support
+* [X] golang support
+* [X] spell check
+* [X] mouse on
+* [ ] fuzzy search
+* [ ] snippet
+* [ ] comment
 
 Other vim plugs should move to vim.after and be
 
-
-# vim command
-
+```
 shift-K - find man page
 n  <C-\>       * :call OpenNerdTree()<CR>
 n  <C-S>       * :RelatedSpecVOpen<CR> --?
@@ -59,22 +59,33 @@ n  ,sl         * :RunItermSpringSpecLine<CR>
 n  ,ss         * :RunItermSpringSpec<CR>
 n  ,rl         * :RunItermSpecLine<CR>
 n  ,rs         * :RunItermSpec<CR>
-
+```
 
 `]s` next spell error 
 `zg` add word to good word
 
-# test zsh loading time
-`time zsh -i -c exit`
+`c-\` open NERDTree
 
-# Zsh quick reference
+
+Zsh quick reference
+---
 Zsh conditional-expressions [http://zsh.sourceforge.net/Doc/Release/Conditional-Expressions.html]
 
+test zsh startup time
 
-## TODO
+`time zsh -i -c exit`
+
+
+cheetsheet
+---
+
+
+
+TODO
+---
 
 * [ ] complete install script
 * [ ] install script support options, ask user to install tools
 * [ ] vim install script
 * [ ] more android studio script
-
+* [ ] provider cheetsheet
