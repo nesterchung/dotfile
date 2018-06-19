@@ -63,9 +63,10 @@ n  ,rs         * :RunItermSpec<CR>
 
 `]s` next spell error 
 `zg` add word to good word
+`gx` open url with brwoser
 
 `c-\` open NERDTree
-
+`,g` grep word on cursor
 
 Zsh quick reference
 ---
