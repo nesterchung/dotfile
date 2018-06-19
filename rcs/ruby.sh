@@ -1,3 +1,5 @@
+#!bin/sh
+
 #RUBY_CONFIGURE_OPTS=--with-readline-dir="$(brew --prefix readline)" rbenv install 2.5.1
 
 rbenv() {

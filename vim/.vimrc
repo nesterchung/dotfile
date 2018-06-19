@@ -7,6 +7,7 @@ so $DOTFILES/vim/fzf.vim
 so $DOTFILES/vim/color.vim
 so $DOTFILES/vim/vimwiki.vim
 so $DOTFILES/vim/go.vim
+so $DOTFILES/vim/cpp.vim
 
 set list
 set listchars=tab:▸\ ,eol:¬
@@ -22,6 +23,7 @@ autocmd FileType markdown setlocal spell
 autocmd FileType gitcommit setlocal spell
 set spellfile=$HOME/.config/nvim/spell/en.utf-8.add
 set complete+=kspell
-
 nmap <silent> <leader>s :set spell!<CR>
 nmap <silent> <F2> ]s
+
+command! -nargs=* Wrap set wrap linebr

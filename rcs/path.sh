@@ -1,4 +1,5 @@
-#!/usre/bin/env zsh
+#!/bin/sh
+#
 path_add() {
   test -r $1 && export PATH=$PATH:$1 || echo "$1 not found"
 }
@@ -7,6 +8,8 @@ path_add() {
 path_add $ANT_HOME/bin
 path_add $GRADLE_HOME/bin
 path_add $GOROOT/bin
+path_add "/usr/local/opt/coreutils/libexec/gnubin"
+path_add "/usr/local/opt/openssl/bin"
 
 #python
 path_add $HOME/anaconda2/bin

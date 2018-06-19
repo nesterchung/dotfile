@@ -3,6 +3,7 @@ vi-note(){
   topic=$1
   $EDITOR $NOTE_DIR/${topic}.md
 }
+
 #markdown alias
 for topic in {android,ios,git,dp,kt}; do
     alias vi-note-${topic}="$EDITOR $NOTE_DIR/${topic}.md";
@@ -28,6 +29,8 @@ alias vim="nvim"
 alias m='vimr'
 alias o="open"
 alias ptt="ssh bbsu@ptt.cc"
+
+
 
 # list my repos
 alias ls-repos="curl -s https://api.github.com/users/nesterchung/repos | jq -c '.[] | {name,html_url}'"

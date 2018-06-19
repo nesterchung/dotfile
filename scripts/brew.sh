@@ -1,9 +1,10 @@
+#/bin/sh
+
 brew update
 brew upgrade 
 
 brew isntall cask
-brew install coreutils
-brew install moreutils
+brew install coreutils findutils gnu-tar gnu-sed gawk gnutls gnu-indent gnu-getop moreutilst
 
 # Instead find grep fuzzy search
 brew install fd ripgrep fzf fasd
@@ -28,10 +29,14 @@ brew install par # text indent formant
 brew tap neovim/neovim
 brew install neovim
 brew install hub
+brew install peco
+gem install adb-peco
+
 # python
 brew cask install Caskroom/cask/anaconda
 
-
-
+#ruby?
 
 brew cleanup
+
+sudo pip install cmakelint
