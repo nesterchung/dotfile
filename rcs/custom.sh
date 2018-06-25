@@ -1,1 +1,1 @@
-safe_source $RCFILES/.siterwellrc
+safe_source $RC_DIR/siterwellrc

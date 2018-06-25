@@ -17,6 +17,7 @@ set smartcase
 " Always enable spell check, my grammar is horrible
 set spell
 set mouse=a     " enable mouse support
+set clipboard=unnamed "yank to pbcopy"
 " Spell-check Markdown files
 autocmd FileType markdown setlocal spell
 " Spell-check Git messages
@@ -26,4 +27,4 @@ set complete+=kspell
 nmap <silent> <leader>s :set spell!<CR>
 nmap <silent> <F2> ]s
 
-command! -nargs=* Wrap set wrap linebr
+command! -nargs=* Wrap set wrap linebreak
