@@ -21,6 +21,8 @@ Plugin 'morhetz/gruvbox'
 Plugin 'ervandew/supertab'
 Plugin 'vimwiki/vimwiki'
 Plugin 'w0rp/ale'
+Plugin 'rhysd/vim-clang-format'
+Plugin 'gregsexton/gitv'
 
 if has('nvim')
     Plugin 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' }
