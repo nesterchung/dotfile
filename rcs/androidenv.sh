@@ -26,6 +26,9 @@ alias adb-screencap="adb shell screencap -p | sed 's/\r//' > adb_\`date +%Y%m%d%
 alias adb-setting-start="adb shell am start -n com.android.settings/.Settings"
 alias adb-dump-activity="adb shell dumpsys activity"
 alias adb-dump-service="adb shell dumpsys service"
+alias adb-list-packages="adb shell pm list packages | awk -F ":" '{print $2}'"
+# todo to get all package install in devices
+#alias gfxinfo="dumpsys gfxinfo "
 
 _adb_pull() {
     read p && adb pull $p

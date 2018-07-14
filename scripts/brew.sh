@@ -30,6 +30,7 @@ brew tap neovim/neovim
 brew install neovim
 brew install hub
 brew install peco
+brew install shyiko/ktlint/ktlint
 gem install adb-peco
 
 # python
