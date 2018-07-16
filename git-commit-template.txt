@@ -1,0 +1,13 @@
+# WHAT
+# <issue id> (this commit will...) <subject>
+# ----------------------------commit length----------------------------->|
+one uninitialized byte after the command (and this byte is enough to flush
+
+# WHY and HOW
+# Explain why this change is being made
+
+# RELATED
+# Provide links or keys to any relevant issues or other resources
+
+# REMEMBER
+# [ ] Add proguard keep if you have add data class

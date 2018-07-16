@@ -29,8 +29,7 @@ alias vim="nvim"
 alias m='vimr'
 alias o="open"
 alias ptt="ssh bbsu@ptt.cc"
-
-
+alias R="source $HOME/.zshrc"
 
 # list my repos
 alias ls-repos="curl -s https://api.github.com/users/nesterchung/repos | jq -c '.[] | {name,html_url}'"

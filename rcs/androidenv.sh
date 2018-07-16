@@ -27,6 +27,7 @@ alias adb-setting-start="adb shell am start -n com.android.settings/.Settings"
 alias adb-dump-activity="adb shell dumpsys activity"
 alias adb-dump-service="adb shell dumpsys service"
 alias ktlint-fzf='ktlint -F $(fd -e kt | fzf)'
+alias ktlint-changes='git diff --name-only | rg kt | xargs ktlint -F'
 
 _adb_pull() {
     read p && adb pull $p
