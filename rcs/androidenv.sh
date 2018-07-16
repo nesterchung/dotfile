@@ -10,13 +10,9 @@ export PATH=$PATH:$ANDROID_HOME/platform-tools
 export PATH=$PATH:$ANDROID_HOME/build-tools/$ANDROID_BUILD_TOOLS_VERSION
 export PATH=$PATH:$ANDROID_NDK_ROOT
 
+
 alias adb='adb-peco'
 alias dumpsys="adb shell dumpsys "
-
-function apkv() {
-  aapt dump badging $1 | grep version
-}
-
 alias adb-ls-data="adb shell ls -Rl /data/data | peco"
 alias adb-data="adb_dir /data/data"
 alias adb-storage="adb_dir /storage"
@@ -28,10 +24,18 @@ alias adb-dump-activity="adb shell dumpsys activity"
 alias adb-dump-service="adb shell dumpsys service"
 alias ktlint-fzf='ktlint -F $(fd -e kt | fzf)'
 alias ktlint-changes='git diff --name-only | rg kt | xargs ktlint -F'
+alias adb-list-packages="adb shell pm list packages | awk -F ":" '{print $2}'"
+# todo to get all package install in devices
+#alias gfxinfo="dumpsys gfxinfo "
+
+function apkv() {
+  aapt dump badging $1 | grep version
+}
 
 _adb_pull() {
     read p && adb pull $p
 }
+
 adb_dir() {
     local dir=$1
     adb shell du $dir | awk -F '\t' '{print $2}' | peco
