@@ -1,0 +1,5 @@
+write a shell function to create userstory from template
+
+like..
+
+doc-user-story-create filename

@@ -27,6 +27,7 @@
   b = branch -v                     # branch (verbose)
 
   # commit
+  commit = commit -s
   c = commit -m                     # commit with message
   ca = commit -am                   # commit all with message
   ci = commit                       # commit
@@ -132,7 +133,7 @@
 	cmd = /Users/nester/Applications/Sourcetree.app/Contents/Resources/opendiff-w.sh \"$LOCAL\" \"$REMOTE\" -ancestor \"$BASE\" -merge \"$MERGED\"
 	trustExitCode = true
 [user]
-	name = nester
+	name = Nester Chung
 	email = twntwn@gmail.com
 [commit]
 

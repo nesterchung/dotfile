@@ -22,6 +22,7 @@ Plugin 'ervandew/supertab'
 Plugin 'vimwiki/vimwiki'
 Plugin 'w0rp/ale'
 Plugin 'rhysd/vim-clang-format'
+Plugin 'freitass/todo.txt-vim'
 Plugin 'gregsexton/gitv'
 
 if has('nvim')

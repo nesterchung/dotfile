@@ -22,6 +22,8 @@ alias adb-screencap="adb shell screencap -p | sed 's/\r//' > adb_\`date +%Y%m%d%
 alias adb-setting-start="adb shell am start -n com.android.settings/.Settings"
 alias adb-dump-activity="adb shell dumpsys activity"
 alias adb-dump-service="adb shell dumpsys service"
+alias adb-launch="adb_launch "
+alias adb-remove="adb_remove"
 alias ktlint-fzf='ktlint -F $(fd -e kt | fzf)'
 alias ktlint-changes='git diff --name-only | rg kt | xargs ktlint -F'
 alias adb-list-packages="adb shell pm list packages | awk -F ":" '{print $2}'"
@@ -39,4 +41,11 @@ _adb_pull() {
 adb_dir() {
     local dir=$1
     adb shell du $dir | awk -F '\t' '{print $2}' | peco
+}
+
+adb_launch() {
+    adb shell monkey -p $1 -c android.intent.category.LAUNCHER 1
+}
+adb_remove() {
+    adb shell pm uninstall $1
 }

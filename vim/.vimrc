@@ -8,7 +8,9 @@ so $DOTFILES/vim/color.vim
 so $DOTFILES/vim/vimwiki.vim
 so $DOTFILES/vim/go.vim
 so $DOTFILES/vim/cpp.vim
+so $DOTFILES/vim/todo.txt.vim
 
+set termguicolors
 set list
 set listchars=tab:▸\ ,eol:¬
 set ignorecase  " make auto complete ignorecase

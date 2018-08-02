@@ -1,0 +1,34 @@
+# User Story For 
+
+Name =
+Role =
+Feature =
+BusinessValue =
+
+
+## Epic
+
+_An epic is a big, sketchy, coarse-grained story. It is typically broken
+into several user stories over time—leveraging the user feedback on
+early prototypes and product increments. You can think of it as a
+headline and a placeholder for more detailed stories._
+
+As a *Role* , I want *Feature* so that *BusinessValue*.
+
+## User Stories
+
+_Break your epics into smaller, detailed stories until they are ready:
+clear, feasible, and testable. All development team members should have
+a shared understanding of the story’s meaning; the story should not be
+too big and comfortably fit into a sprint; and there has to be an
+effective way to determine if the story is done._
+
+## Acceptance Test 
+
+
+## Tasks
+
+
+<!---
+ vim: sw=2 ts=2 tw=72 et ft=markdown
+ -->
