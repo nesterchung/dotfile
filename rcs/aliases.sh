@@ -35,6 +35,8 @@ alias ptt="ssh bbsu@ptt.cc"
 alias R="source $HOME/.zshrc"
 alias tmux="TERM=screen-256color-bce tmux"
 alias ssh='TERM=xterm-256color ssh'
+alias todo='todo.sh'
+alias weather='curl wttr.in/$(basename $(readlink /etc/localtime))'
 
 # list my repos
 alias ls-repos="curl -s https://api.github.com/users/nesterchung/repos | jq -c '.[] | {name,html_url}'"
