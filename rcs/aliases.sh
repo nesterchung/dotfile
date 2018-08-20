@@ -5,17 +5,20 @@ vi-note(){
 }
 
 #markdown alias
-for topic in {android,ios,git,dp,kt}; do
-    alias vi-note-${topic}="$EDITOR $NOTE_DIR/${topic}.md";
+for topic in {android,ios,git,dp,kt}
+do
+    alias vi-note-${topic}="$EDITOR $NOTE_DIR/${topic}.md"
 done
 
-for file in $RESUME_DIR/resume*.md(.); do
+for file in $RESUME_DIR/resume*.md(.)
+do
     filename=$(basename -- $file)
     cvname=${filename%.*}
     alias vi-resume-${cvname}="${EDITOR} ${RESUME_DIR}/${cvname}.md"
 done
 
-for file in $RC_DIR/*(.) ; do
+for file in $RC_DIR/*(.)
+do
     filename=$(basename -- $file)
     alias vi-rc-${filename}="${EDITOR} ${RC_DIR}/${filename}"
 done
