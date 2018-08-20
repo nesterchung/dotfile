@@ -1,11 +1,6 @@
-" Brief help
-" :PluginList       - lists configured plugins
-" :PluginInstall    - installs plugins; append `!` to update or just :PluginUpdate
-" :PluginSearch foo - searches for foo; append `!` to refresh local cache
-" :PluginClean      - confirms removal of unused plugins; append `!` to auto-approve removal
-"
-" see :h vundle for more details or wiki for FAQ
-" set the runtime path to include Vundle and initialize
+" File              : /Users/nester/dotfile/vim/plugins.vim
+" Date              : 03.08.2018
+" Last Modified Date: 03.08.2018
 set rtp+=~/.vim/bundle/Vundle.vim
 call vundle#begin()
 
@@ -19,11 +14,18 @@ Plugin 'scrooloose/nerdcommenter' " commenting
 Plugin 'fatih/vim-go'           " Go development plugin for Vim
 Plugin 'morhetz/gruvbox'
 Plugin 'ervandew/supertab'
+Plugin 'mattn/calendar-vim'
 Plugin 'vimwiki/vimwiki'
 Plugin 'w0rp/ale'
 Plugin 'rhysd/vim-clang-format'
 Plugin 'freitass/todo.txt-vim'
 Plugin 'gregsexton/gitv'
+Plugin 'alpertuna/vim-header'
+Plugin 'vim-pandoc/vim-pandoc'
+Plugin 'vim-pandoc/vim-pandoc-syntax'
+Plugin 'mattn/gist-vim'
+Plugin 'mattn/webapi-vim'
+
 
 if has('nvim')
     Plugin 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' }

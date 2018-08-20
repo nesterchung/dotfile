@@ -1,3 +1,7 @@
+" File              : /Users/nester/dotfile/vim/.vimrc
+" Author            : Nester Chung <twntwn3838@gmail>
+" Date              : 03.08.2018
+" Last Modified Date: 03.08.2018
 so $DOTFILES/vim/minimal-vimrc.vim
 so $DOTFILES/vim/plugins.vim
 so $DOTFILES/vim/deoplete.vim
@@ -9,12 +13,16 @@ so $DOTFILES/vim/vimwiki.vim
 so $DOTFILES/vim/go.vim
 so $DOTFILES/vim/cpp.vim
 so $DOTFILES/vim/todo.txt.vim
+so $DOTFILES/vim/vim-header.vim
 
 set termguicolors
 set list
 set listchars=tab:▸\ ,eol:¬
 set ignorecase  " make auto complete ignorecase
 set smartcase
+
+"shell
+au BufRead,BufNewFile *.sh set sw=2 ts=2 tw=72
 
 " Always enable spell check, my grammar is horrible
 set spell

@@ -1,0 +1,15 @@
+#!/bin/bash
+# File              : vwadd
+# Author            : Nester Chung <twntwn3838@gmail>
+# Date              : 20.08.2018
+# Last Modified Date: 20.08.2018
+
+DIR="/Users/nester/Dropbox/vimwiki/diary"
+curr_filename=$(date "+%Y-%m-%d.wiki")
+curr_fullpath=$DIR/$curr_filename
+
+$EDITOR $curr_fullpath
+
+unset DIR
+unset curr_fullpath
+unset curr_filename
