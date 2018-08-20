@@ -32,6 +32,8 @@ brew install hub
 brew install peco
 brew install infer # bugs detected
 brew install shyiko/ktlint/ktlint
+brew install tig
+brew insatll mutt
 gem install adb-peco
 
 # python
