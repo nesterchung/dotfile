@@ -2,6 +2,7 @@
 bindkey -v
 
 # exports
+export HISTCONTROL=ignoreboth:erasedups
 export DOTFILES=$HOME/dotfile
 export RC_DIR=$DOTFILES/rcs
 export DROPBOX_HOME=$HOME/Dropbox/
