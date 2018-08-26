@@ -8,17 +8,15 @@ export RC_DIR=$DOTFILES/rcs
 export DROPBOX_HOME=$HOME/Dropbox/
 export NOTE_DIR=$DROPBOX_HOME/markdown
 export RESUME_DIR=$DROPBOX_HOME/resume/archive
+#basic functions
+source $HOME/dotfile/rcs/basic.sh
 
 # paths
-export PATH=$PATH:$HOME/bin
-export PATH=$PATH:$DOTFILES/binref
+set_env PATH=$PATH:$HOME/bin
+set_env PATH=$PATH:$DOTFILES/binref
 
-#basic functions
-safe_source() {
-    test -r $1 && [ -f $file ] && source $1
-}
 
-for file in $RC_DIR/{exports,path,aliases,functions,prompt,extras,androidenv,custom}.sh; do 
+for file in $RC_DIR/{set_envs,path,aliases,functions,prompt,extras,androidenv,custom}.sh; do 
     safe_source $file
 done
 unset file

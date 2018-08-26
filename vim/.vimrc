@@ -32,9 +32,15 @@ set clipboard=unnamed "yank to pbcopy"
 autocmd FileType markdown setlocal spell
 " Spell-check Git messages
 autocmd FileType gitcommit setlocal spell
+
+autocmd BufNewFile,BufRead todo.txt set ft=todo
 set spellfile=$HOME/.config/nvim/spell/en.utf-8.add
 set complete+=kspell
 nmap <silent> <leader>s :set spell!<CR>
 nmap <silent> <F2> ]s
 
 command! -nargs=* Wrap set wrap linebreak
+
+let g:header_auto_add_header = 0
+let g:header_field_author = 'Nester Chung'
+let g:header_field_author_email = 'twntwn3838@gmail'

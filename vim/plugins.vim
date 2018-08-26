@@ -8,6 +8,7 @@ Plugin 'VundleVim/Vundle.vim'
 Plugin 'tpope/vim-fugitive'     " git support
 Plugin 'scrooloose/nerdtree'    " file system explorer
 Plugin 'tpope/vim-surround'     " surroundings - parentheses, brackets, quotes, XML tags, and more.
+Plugin 'tpope/vim-unimpaired'   " use [q ]q [Q [Q
 Plugin 'junegunn/fzf.vim'       " fzf love vim       
 Plugin 'majutsushi/tagbar'      " Vim plugin that displays tags in a window, ordered by scope
 Plugin 'scrooloose/nerdcommenter' " commenting
@@ -16,16 +17,14 @@ Plugin 'morhetz/gruvbox'
 Plugin 'ervandew/supertab'
 Plugin 'mattn/calendar-vim'
 Plugin 'vimwiki/vimwiki'
+Plugin 'freitass/todo.txt-vim'
 Plugin 'w0rp/ale'
 Plugin 'rhysd/vim-clang-format'
-Plugin 'freitass/todo.txt-vim'
 Plugin 'gregsexton/gitv'
 Plugin 'alpertuna/vim-header'
 Plugin 'vim-pandoc/vim-pandoc'
 Plugin 'vim-pandoc/vim-pandoc-syntax'
 Plugin 'mattn/gist-vim'
-Plugin 'mattn/webapi-vim'
-
 
 if has('nvim')
     Plugin 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' }
