@@ -19,7 +19,7 @@ set_env PATH=$PATH:$HOME/bin
 set_env PATH=$PATH:$DOTFILES/binref
 
 
-for file in $RC_DIR/{set_envs,path,aliases,functions,prompt,extras,androidenv,custom}.sh; do 
+for file in $RC_DIR/{set_envs,exports,path,aliases,functions,prompt,extras,androidenv,custom}.sh; do 
     safe_source $file
 done
 unset file
