@@ -24,6 +24,10 @@ set smartcase
 "shell
 au BufRead,BufNewFile *.sh set sw=2 ts=2 tw=72
 
+"quick input date/time
+au FileType vimwiki,asciidoc,markdown inoremap <script> <silent> <buffer> date<Tab> <C-R>=strftime("%Y-%m-%d")<CR>
+au FileType vimwiki,asciidoc,markdown inoremap <script> <silent> <buffer> time<Tab> <C-R>=strftime("%H:%M:%S")<CR>
+
 " Always enable spell check, my grammar is horrible
 set spell
 set mouse=a     " enable mouse support
