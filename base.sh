@@ -2,6 +2,9 @@
 bindkey -v
 
 # exports
+# Workaround need to escape "^" symbol in zsh
+# https://github.com/robbyrussell/oh-my-zsh/issues/449
+unsetopt nomatch
 export HISTCONTROL=ignoreboth:erasedups
 export DOTFILES=$HOME/dotfile
 export RC_DIR=$DOTFILES/rcs
