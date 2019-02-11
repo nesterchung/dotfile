@@ -27,6 +27,7 @@ Plugin 'vim-pandoc/vim-pandoc-syntax'
 Plugin 'mattn/gist-vim'
 Plugin 'mattn/webapi-vim'
 Plugin 'asciidoc/vim-asciidoc'
+Plugin 'udalov/kotlin-vim'
 
 if has('nvim')
     Plugin 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' }

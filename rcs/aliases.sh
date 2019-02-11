@@ -37,6 +37,10 @@ alias tmux="TERM=screen-256color-bce tmux"
 alias ssh='TERM=xterm-256color ssh'
 alias todo='todo.sh'
 alias weather='curl wttr.in/$(basename $(readlink /etc/localtime))'
+alias wip='git commit -a -m WIP'
+alias squish='git status && git commit -a --amend -C HEAD'
+alias rank="git shortlog -s -n -e --no-merges --after=\"`gdate -d'30
+days ago' +%Y-%m-%d`\""
 
 # list my repos
 alias ls-repos="curl -s https://api.github.com/users/nesterchung/repos | jq -c '.[] | {name,html_url}'"

@@ -1,7 +1,8 @@
 #!/bin/sh
-export ANDROID_BUILD_TOOLS_VERSION="26.0.1"
+export ANDROID_BUILD_TOOLS_VERSION="27.0.3"
+#export ANDROID_NDK_PATH=$HOME/dev/android-ndk-r10e
+export GRADLE_HOME=/usr/local/opt/gradle
 export ANDROID_SDK_PATH=/usr/local/share/android-sdk
-export ANDROID_NDK_PATH=$HOME/dev/android-ndk-r10e
 export ANDROID_HOME=/usr/local/share/android-sdk
 export ANDROID_SDK_ROOT=$ANDROID_SDK_PATH
 
@@ -9,6 +10,8 @@ export PATH=$PATH:$ANDROID_HOME/tools
 export PATH=$PATH:$ANDROID_HOME/platform-tools
 export PATH=$PATH:$ANDROID_HOME/build-tools/$ANDROID_BUILD_TOOLS_VERSION
 export PATH=$PATH:$ANDROID_NDK_ROOT
+export JAVA_HOME=`/usr/libexec/java_home -v 1.8`
+
 
 
 alias adb='adb-peco'
@@ -27,6 +30,7 @@ alias adb-remove="adb_remove"
 alias ktlint-fzf='ktlint -F $(fd -e kt | fzf)'
 alias ktlint-changes='git diff --name-only | rg kt | xargs ktlint -F'
 alias adb-list-packages="adb shell pm list packages | awk -F ":" '{print $2}'"
+alias systrace="python $ANDROID_HOME/platform-tools/systrace/systrace.py"
 # todo to get all package install in devices
 #alias gfxinfo="dumpsys gfxinfo "
 

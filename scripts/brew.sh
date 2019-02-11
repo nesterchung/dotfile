@@ -37,7 +37,7 @@ brew insatll mutt
 gem install adb-peco
 
 # python
-brew cask install Caskroom/cask/anaconda
+#brew cask install Caskroom/cask/anaconda
 
 #ruby?
 

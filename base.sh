@@ -16,7 +16,7 @@ source $HOME/dotfile/rcs/basic.sh
 
 # paths
 set_env PATH=$PATH:$HOME/bin
-set_env PATH=$PATH:$DOTFILES/binref
+set_env PATH=$PATH:$DOTFILES/bin
 
 
 for file in $RC_DIR/{set_envs,exports,path,aliases,functions,prompt,extras,androidenv,custom}.sh; do 
