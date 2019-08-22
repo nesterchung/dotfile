@@ -14,6 +14,7 @@ so $DOTFILES/vim/go.vim
 so $DOTFILES/vim/cpp.vim
 so $DOTFILES/vim/todo.txt.vim
 so $DOTFILES/vim/vim-header.vim
+so $DOTFILES/vim/ale.vim
 
 set termguicolors
 set list
@@ -50,3 +51,8 @@ command! -nargs=* Wrap set wrap linebreak
 let g:header_auto_add_header = 0
 let g:header_field_author = 'Nester Chung'
 let g:header_field_author_email = 'twntwn3838@gmail'
+
+
+au BufRead,BufNewFile *.ex,*.exs set filetype=elixir
+au BufRead,BufNewFile *.eex,*.leex set filetype=eelixir
+au BufRead,BufNewFile mix.lock set filetype=elixir

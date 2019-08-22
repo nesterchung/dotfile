@@ -48,6 +48,7 @@
 
   # log
     l = log --graph --date=short --pretty=format:\"%C(blue)%ad%Creset %C(yellow)%h%C(green)%d%Creset %C(blue)%s %C(magenta) [%an]%Creset\"
+    release-note = log --date=short --pretty=format:\"%C(magenta) [%an]%Creset %C(yellow)%h%C(green)%d%Creset %s\"
   changes = log --pretty=format:\"%h %cr %cn %Cgreen%s%Creset\" --name-status
   short = log --pretty=format:\"%h %cr %cn %Cgreen%s%Creset\"
   simple = log --pretty=format:\" * %s\"

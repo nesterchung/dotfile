@@ -3,7 +3,7 @@
 brew update
 brew upgrade 
 
-brew isntall cask
+brew install cask
 brew install coreutils findutils gnu-tar gnu-sed gawk gnutls gnu-indent gnu-getop moreutilst
 
 # Instead find grep fuzzy search
