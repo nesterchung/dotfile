@@ -6,12 +6,11 @@ path_add() {
 
 # Customize Paths
 #path_add $ANT_HOME/bin
-path_add $GRADLE_HOME/bin
-path_add $GOROOT/bin
-path_add "/usr/local/opt/coreutils/libexec/gnubin"
-path_add "/usr/local/opt/openssl/bin"
+#path_add $GRADLE_HOME/bin
+#path_add $GOROOT/bin
+#path_add "/usr/local/opt/coreutils/libexec/gnubin"
+#path_add "/usr/local/opt/openssl/bin"
 
 #python
-# path_add $HOME/anaconda2/bin
 
 # vim: ts=2 sw=2

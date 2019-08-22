@@ -1,0 +1,1 @@
+/home/nester/dev/idea-IC-191.7479.19/bin/idea.sh
