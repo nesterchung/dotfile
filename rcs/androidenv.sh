@@ -1,17 +1,20 @@
-#!/bin/sh
-export ANDROID_BUILD_TOOLS_VERSION="27.0.3"
-#export ANDROID_NDK_PATH=$HOME/dev/android-ndk-r10e
-export GRADLE_HOME=/usr/local/opt/gradle
-export ANDROID_SDK_PATH=/usr/local/share/android-sdk
-export ANDROID_HOME=/usr/local/share/android-sdk
-export ANDROID_SDK_ROOT=$ANDROID_SDK_PATH
+#!/bin/bash
+
+export ANDROID_BUILD_TOOLS_VERSION="28.0.1"
+ANDROID_SDK_PATH=$HOME/Android/Sdk
+ANDROID_NDK_PATH=$HOME/dev/android-ndk-r15c
+export BUCK_PATH=$HOME/dev/buck
+
+export ANDROID_HOME=$ANDROID_SDK_PATH
+export ANDROID_SDK=$ANDROID_SDK_PATH
+export ANDROID_NDK=$ANDROID_NDK_PATH
+export KOTLIN_HOME=$HOME/dev/kotlin
 
 export PATH=$PATH:$ANDROID_HOME/tools
 export PATH=$PATH:$ANDROID_HOME/platform-tools
 export PATH=$PATH:$ANDROID_HOME/build-tools/$ANDROID_BUILD_TOOLS_VERSION
 export PATH=$PATH:$ANDROID_NDK_ROOT
-export JAVA_HOME=`/usr/libexec/java_home -v 1.8`
-
+export PATH=$PATH:$BUCK_PATH/bin
 
 
 alias adb='adb-peco'
@@ -34,7 +37,7 @@ alias systrace="python $ANDROID_HOME/platform-tools/systrace/systrace.py"
 # todo to get all package install in devices
 #alias gfxinfo="dumpsys gfxinfo "
 
-function apkv() {
+function apkv () {
   aapt dump badging $1 | grep version
 }
 

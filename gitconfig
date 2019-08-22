@@ -12,6 +12,7 @@
   old = red
   new = green
 [alias]
+  release-note = log --date=short --pretty=format:\"%C(magenta) [%an]%Creset %C(yellow)%h%C(green)%d%Creset %s\"
   # add
   a = add                           # add
   chunkyadd = add --patch           # stage commits chunk by chunk

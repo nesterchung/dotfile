@@ -3,6 +3,10 @@ alias gwc='gw clean'
 alias gapprm='adb uninstall com.grindrapp.android'
 
 GRINDR_REVIEWERS="freesamael, JacksonHuang, eugene.chen, w4a2y4, chris.wu, saket.dandawate, phillip.hsu, fire, ricardo.becerra, nick.penna, Guoyang, evanlin, JianCong, alex.lin"
+export PATH="$PATH:/$HOME/dev/arcanist/bin/"
+source ~/dev/grindr-3.0-android/scripts/aliases.sh
+alias open=nautilus
+alias o=open
 
 alias arcd="arc diff --reviewers '$GRINDR_REVIEWERS' "
 
